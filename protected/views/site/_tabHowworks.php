@@ -1,1 +1,1 @@
-<p>How the system works</p>
+<p><?php echo Yii::t('interface', 'How the system works');?></p>

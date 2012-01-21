@@ -29,6 +29,13 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+		// TODO move this to main controller beforeAction
+		if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])){
+			$lang = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
+		    Yii::app()->setLanguage($lang[0]);
+		}else
+		    Yii::app()->setLanguage('es');
+		
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$model=new LoginForm;
