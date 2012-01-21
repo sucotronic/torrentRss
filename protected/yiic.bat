@@ -9,7 +9,7 @@ rem -------------------------------------------------------------
 
 set BIN_PATH=%~dp0
 
-if "%PHP_COMMAND%" == "" set PHP_COMMAND=php.exe
+if "%PHP_COMMAND%" == "" set PHP_COMMAND=C:\xampp\php\php.exe
 
 "%PHP_COMMAND%" "%BIN_PATH%yiic.php" %*
 
