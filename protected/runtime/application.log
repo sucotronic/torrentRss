@@ -1,0 +1,45 @@
+2012/01/21 11:40:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in C:\Users\suco\Workspace\torren\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\suco\Workspace\torren\framework\web\CController.php(271): CController->missingAction('page')
+#1 C:\Users\suco\Workspace\torren\framework\web\CWebApplication.php(276): CController->run('page')
+#2 C:\Users\suco\Workspace\torren\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#3 C:\Users\suco\Workspace\torren\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\suco\Workspace\torren\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://torren.localhost/index.php?r=site/index
+---
+2012/01/21 11:40:13 [error] [php] include(ContactForm.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\Users\suco\Workspace\torren\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\Users\suco\Workspace\torren\protected\controllers\SiteController.php(56): spl_autoload_call()
+#1 C:\Users\suco\Workspace\torren\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#2 C:\Users\suco\Workspace\torren\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\Users\suco\Workspace\torren\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\Users\suco\Workspace\torren\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\Users\suco\Workspace\torren\framework\web\CWebApplication.php(276): SiteController->run()
+#6 C:\Users\suco\Workspace\torren\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\Users\suco\Workspace\torren\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Users\suco\Workspace\torren\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/contact
+in C:\Users\suco\Workspace\torren\protected\controllers\SiteController.php (56)
+in C:\Users\suco\Workspace\torren\public\index.php (13)
+2012/01/21 11:40:16 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.breadcrumbs" is not defined.' in C:\Users\suco\Workspace\torren\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Users\suco\Workspace\torren\protected\views\site\login.php(3): CComponent->__set('breadcrumbs', Array)
+#1 C:\Users\suco\Workspace\torren\framework\web\CBaseController.php(127): require('C:\Users\suco\W...')
+#2 C:\Users\suco\Workspace\torren\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Users\suco\W...', Array, true)
+#3 C:\Users\suco\Workspace\torren\framework\web\CController.php(870): CBaseController->renderFile('C:\Users\suco\W...', Array, true)
+#4 C:\Users\suco\Workspace\torren\framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#5 C:\Users\suco\Workspace\torren\protected\controllers\SiteController.php(94): CController->render('login', Array)
+#6 C:\Users\suco\Workspace\torren\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\Users\suco\Workspace\torren\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\Users\suco\Workspace\torren\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\Users\suco\Workspace\torren\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\suco\Workspace\torren\framework\web\CWebApplication.php(276): CController->run('login')
+#11 C:\Users\suco\Workspace\torren\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#12 C:\Users\suco\Workspace\torren\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\Users\suco\Workspace\torren\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://torren.localhost/index.php?r=site/index
+---
